@@ -37,6 +37,7 @@ const render = require("./lib/htmlRenderer");
 // array of questions for user
 // const questions =
 inquirer.prompt([
+      // manager`s set of questions 
   {
     type: "input",
     message: "What is your Manager`s Name?",
@@ -60,6 +61,62 @@ inquirer.prompt([
   {
     type: "rawlist",
     message: "Which type of team member you like to add?",
+    name: "typeOfTeamMember",
+    choices: ["Engineer", "Intern", "None",],
+  },
+
+  // Engineer set of questions 
+  {
+    type: "input",
+    message: "What is your Engineer`s Name?",
+    name: "engineersName",
+  },
+  {
+    type: "input",
+    message: "What is Engineer`s ID?",
+    name: "engineersId",
+  },
+  {
+    type: "input",
+    message: "What is Engineer`s Email?",
+    name: "engineersEmail",
+  },
+  {
+    type: "input",
+    message: "What is Engineer`s GitHub User Name?",
+    name: "engineersGitHubUserName",
+  },
+  {
+    type: "rawlist",
+    message: "Which type of team member you like to add?",
+    name: "typeOfTeamMember",
+    choices: ["Engineer", "Intern", "None",],
+  },
+
+  // Intern set of questions 
+  {
+    type: "input",
+    message: "What is your Intern`s Name?",
+    name: "internsName",
+  },
+  {
+    type: "input",
+    message: "What is Intern`s ID?",
+    name: "internsId",
+  },
+  {
+    type: "input",
+    message: "What is Intern`s Email?",
+    name: "internsEmail",
+  },
+  {
+    type: "input",
+    message: "What is Intern`s School Name?",
+    name: "internsSchoolName",
+  },
+  {
+    type: "rawlist",
+    message: "Which Type of Team Member would you like to add?",
     name: "typeOfTeamMember",
     choices: ["Engineer", "Intern", "None",],
   },
