@@ -34,10 +34,13 @@ const render = require("./lib/htmlRenderer");
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
 
+
+
+
 // array of questions for user
 // const questions =
 inquirer.prompt([
-      // manager`s set of questions 
+  // manager`s set of questions
   {
     type: "input",
     message: "What is your Manager`s Name?",
@@ -62,10 +65,11 @@ inquirer.prompt([
     type: "rawlist",
     message: "Which type of team member you like to add?",
     name: "typeOfTeamMember",
-    choices: ["Engineer", "Intern", "None",],
+    choices: ["Engineer", "Intern", "None"],
   },
-
-  // Engineer set of questions 
+]);
+// Engineer set of questions
+inquirer.prompt([
   {
     type: "input",
     message: "What is your Engineer`s Name?",
@@ -90,10 +94,11 @@ inquirer.prompt([
     type: "rawlist",
     message: "Which type of team member you like to add?",
     name: "typeOfTeamMember",
-    choices: ["Engineer", "Intern", "None",],
+    choices: ["Engineer", "Intern", "None"],
   },
-
-  // Intern set of questions 
+]);
+// Intern set of questions
+inquirer.prompt([
   {
     type: "input",
     message: "What is your Intern`s Name?",
@@ -118,6 +123,15 @@ inquirer.prompt([
     type: "rawlist",
     message: "Which Type of Team Member would you like to add?",
     name: "typeOfTeamMember",
-    choices: ["Engineer", "Intern", "None",],
+    choices: ["Engineer", "Intern", "None"],
   },
 ]);
+
+//function to initialize program/unction call to initialize program
+//  .then((data) => {
+//     console.log(data);
+//     let generateMarkdownResponse = generateMarkdown(data);
+//     const readMeLicense = generateMarkdown(data);
+//     writeToFile("README.md", readMeLicense, generateMarkdownResponse);
+//     console.log(generateMarkdownResponse);
+//   });
