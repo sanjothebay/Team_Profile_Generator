@@ -34,117 +34,145 @@ const render = require("./lib/htmlRenderer");
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
 
-
-
-
 // array of questions for user
 // const questions =
-// function to call the question prompts 
+// function to call the question prompts
+function ManagerQuestions() {
+  inquirer
+    .prompt([
+      // manager`s set of questions
+      {
+        type: "input",
+        message: "What is your Manager`s Name?",
+        name: "managersName",
+      },
+      {
+        type: "input",
+        message: "What is Manager`s ID?",
+        name: "managersId",
+      },
+      {
+        type: "input",
+        message: "What is Manager`s Email?",
+        name: "managersEmail",
+      },
+      {
+        type: "input",
+        message: "What is Manager`s Office Number?",
+        name: "managersOfficeNumber",
+      },
+      {
+        type: "rawlist",
+        message: "Which type of team member you like to add?",
+        name: "typeOfTeamMember",
+        choices: ["Engineer", "Intern", "None"],
+        /*if, if/else, and else statement to run function again if 
+    they choose to add a team member Else render the HTML (*/
+      },
+    ])
 
-inquirer.prompt([
-  // manager`s set of questions
-  {
-    type: "input",
-    message: "What is your Manager`s Name?",
-    name: "managersName",
-  },
-  {
-    type: "input",
-    message: "What is Manager`s ID?",
-    name: "managersId",
-  },
-  {
-    type: "input",
-    message: "What is Manager`s Email?",
-    name: "managersEmail",
-  },
-  {
-    type: "input",
-    message: "What is Manager`s Office Number?",
-    name: "managersOfficeNumber",
-  },
-  {
-    type: "rawlist",
-    message: "Which type of team member you like to add?",
-    name: "typeOfTeamMember",
-    choices: ["Engineer", "Intern", "None"],
-    /*if, if/else, and else statement to run function again if 
-    they choose to add a team member Else render the HTML */
-  },
-]);
-
+    //function to initialize program/unction call to initialize program
+    .then((response) => {
+      // fs.writeToFile();
+      if (response.typeOfTeamMember === "Engineer"  ) {
+        engineersQuestions();
+      }else if(response.typeOfTeamMember === "Intern"  )
+      {
+        InternQuestions();
+      }
+    });
+}
 // Engineer set of questions
-// function to call the question prompts 
+// function to call the question prompts
 
-inquirer.prompt([
-  {
-    type: "input",
-    message: "What is your Engineer`s Name?",
-    name: "engineersName",
-  },
-  {
-    type: "input",
-    message: "What is Engineer`s ID?",
-    name: "engineersId",
-  },
-  {
-    type: "input",
-    message: "What is Engineer`s Email?",
-    name: "engineersEmail",
-  },
-  {
-    type: "input",
-    message: "What is Engineer`s GitHub User Name?",
-    name: "engineersGitHubUserName",
-  },
-  {
-    type: "rawlist",
-    message: "Which type of team member you like to add?",
-    name: "typeOfTeamMember",
-    choices: ["Engineer", "Intern", "None"],
-    /*if, if/else, and else statement to run function again if 
+function engineersQuestions() {
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        message: "What is your Engineer`s Name?",
+        name: "engineersName",
+      },
+      {
+        type: "input",
+        message: "What is Engineer`s ID?",
+        name: "engineersId",
+      },
+      {
+        type: "input",
+        message: "What is Engineer`s Email?",
+        name: "engineersEmail",
+      },
+      {
+        type: "input",
+        message: "What is Engineer`s GitHub User Name?",
+        name: "engineersGitHubUserName",
+      },
+      {
+        type: "rawlist",
+        message: "Which type of team member you like to add?",
+        name: "typeOfTeamMember",
+        choices: ["Engineer", "Intern", "None"],
+        /*if, if/else, and else statement to run function again if 
     they choose to add a team member Else render the HTML */
-  },
-]);
+      },
+    ])
+    .then((response) => {
+      console.log(response);
+      // fs.writeToFile();
+      if (response.typeOfTeamMember === "Engineer"  ) {
+        engineersQuestions();
+      }else if(response.typeOfTeamMember === "Intern"  )
+      {
+        InternQuestions();
+      }
+      console.log(response);
+    });
+}
 
 // Intern set of questions
-// function to call the question prompts 
-
-inquirer.prompt([
-  {
-    type: "input",
-    message: "What is your Intern`s Name?",
-    name: "internsName",
-  },
-  {
-    type: "input",
-    message: "What is Intern`s ID?",
-    name: "internsId",
-  },
-  {
-    type: "input",
-    message: "What is Intern`s Email?",
-    name: "internsEmail",
-  },
-  {
-    type: "input",
-    message: "What is Intern`s School Name?",
-    name: "internsSchoolName",
-  },
-  {
-    type: "rawlist",
-    message: "Which Type of Team Member would you like to add?",
-    name: "typeOfTeamMember",
-    choices: ["Engineer", "Intern", "None"],
-    /*if, if/else, and else statement to run function again if 
+// function to call the question prompts
+function InternQuestions() {
+  inquirer
+    .prompt([
+      {
+        type: "input",
+        message: "What is your Intern`s Name?",
+        name: "internsName",
+      },
+      {
+        type: "input",
+        message: "What is Intern`s ID?",
+        name: "internsId",
+      },
+      {
+        type: "input",
+        message: "What is Intern`s Email?",
+        name: "internsEmail",
+      },
+      {
+        type: "input",
+        message: "What is Intern`s School Name?",
+        name: "internsSchoolName",
+      },
+      {
+        type: "rawlist",
+        message: "Which Type of Team Member would you like to add?",
+        name: "typeOfTeamMember",
+        choices: ["Engineer", "Intern", "None"],
+        /*if, if/else, and else statement to run function again if 
     they choose to add a team member Else render the HTML */
-  },
-]);
+      },
+    ])
+    .then((response) => {
+      // fs.writeToFile();
+      if (response.typeOfTeamMember === "Engineer"  ) {
+        engineersQuestions();
+      }else if(response.typeOfTeamMember === "Intern"  )
+      {
+        InternQuestions();
+      }
+    });
+}
 
-//function to initialize program/unction call to initialize program
-//  .then((response) => {
-//     console.log(response);
-//     const readMeLicense = new generateMarkdown(response);
-//     fs.writeToFile("README.md", readMeLicense, generateMarkdownResponse);
-//     console.log(response);
-//   });
+ManagerQuestions();
