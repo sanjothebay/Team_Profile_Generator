@@ -22,7 +22,7 @@ const render = require("./lib/htmlRenderer");
 // returned from the `render` function. Now write it to a file named `team.html` in the
 // `output` folder. You can use the variable `outputPath` above target this location.
 // Hint: you may need to check if the `output` folder exists and create it if it
-// does not.
+// does not. created one and place it as in the README file Sructure
 
 // HINT: each employee type (manager, engineer, or intern) has slightly different
 // information; write your code to ask different questions via inquirer depending on
@@ -33,6 +33,9 @@ const render = require("./lib/htmlRenderer");
 // for further information. Be sure to test out each class and verify it generates an
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
+
+
+
 
 // array of questions for user
 // const questions =
@@ -74,12 +77,15 @@ function ManagerQuestions() {
 
     //function to initialize program/unction call to initialize program
     .then((response) => {
+      console.log(response);
       // fs.writeToFile();
-      if (response.typeOfTeamMember === "Engineer"  ) {
+      if (response.typeOfTeamMember === "Engineer") {
         engineersQuestions();
-      }else if(response.typeOfTeamMember === "Intern"  )
-      {
+      } else if (response.typeOfTeamMember === "Intern") {
         InternQuestions();
+      } else {
+        response.typeOfTeamMember === "None";
+        render();
       }
     });
 }
@@ -121,13 +127,14 @@ function engineersQuestions() {
     .then((response) => {
       console.log(response);
       // fs.writeToFile();
-      if (response.typeOfTeamMember === "Engineer"  ) {
+      if (response.typeOfTeamMember === "Engineer") {
         engineersQuestions();
-      }else if(response.typeOfTeamMember === "Intern"  )
-      {
+      } else if (response.typeOfTeamMember === "Intern") {
         InternQuestions();
+      } else {
+        response.typeOfTeamMember === "None";
+        render();
       }
-      console.log(response);
     });
 }
 
@@ -166,12 +173,15 @@ function InternQuestions() {
       },
     ])
     .then((response) => {
+      console.log(response);
       // fs.writeToFile();
-      if (response.typeOfTeamMember === "Engineer"  ) {
+      if (response.typeOfTeamMember === "Engineer") {
         engineersQuestions();
-      }else if(response.typeOfTeamMember === "Intern"  )
-      {
+      } else if (response.typeOfTeamMember === "Intern") {
         InternQuestions();
+      } else {
+        response.typeOfTeamMember === "None";
+        render();
       }
     });
 }
