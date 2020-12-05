@@ -39,6 +39,8 @@ const render = require("./lib/htmlRenderer");
 
 // array of questions for user
 // const questions =
+// function to call the question prompts 
+
 inquirer.prompt([
   // manager`s set of questions
   {
@@ -66,9 +68,14 @@ inquirer.prompt([
     message: "Which type of team member you like to add?",
     name: "typeOfTeamMember",
     choices: ["Engineer", "Intern", "None"],
+    /*if, if/else, and else statement to run function again if 
+    they choose to add a team member Else render the HTML */
   },
 ]);
+
 // Engineer set of questions
+// function to call the question prompts 
+
 inquirer.prompt([
   {
     type: "input",
@@ -95,9 +102,14 @@ inquirer.prompt([
     message: "Which type of team member you like to add?",
     name: "typeOfTeamMember",
     choices: ["Engineer", "Intern", "None"],
+    /*if, if/else, and else statement to run function again if 
+    they choose to add a team member Else render the HTML */
   },
 ]);
+
 // Intern set of questions
+// function to call the question prompts 
+
 inquirer.prompt([
   {
     type: "input",
@@ -124,14 +136,15 @@ inquirer.prompt([
     message: "Which Type of Team Member would you like to add?",
     name: "typeOfTeamMember",
     choices: ["Engineer", "Intern", "None"],
+    /*if, if/else, and else statement to run function again if 
+    they choose to add a team member Else render the HTML */
   },
 ]);
 
 //function to initialize program/unction call to initialize program
-//  .then((data) => {
-//     console.log(data);
-//     let generateMarkdownResponse = generateMarkdown(data);
-//     const readMeLicense = generateMarkdown(data);
-//     writeToFile("README.md", readMeLicense, generateMarkdownResponse);
-//     console.log(generateMarkdownResponse);
+//  .then((response) => {
+//     console.log(response);
+//     const readMeLicense = new generateMarkdown(response);
+//     fs.writeToFile("README.md", readMeLicense, generateMarkdownResponse);
+//     console.log(response);
 //   });

@@ -75,7 +75,7 @@ app.js         // Runs the application
 
 * You will want to make your methods as pure as possible. This means try to make your methods simple so that they are easier to test.
 
-* The different employee types should all inherit some methods and properties from a base class of `Employee`.
+* The different employee types should all inherit some methods and properties from a base class of `Employee`. [use super function for this] 
 
 * In your HTML template files, you may want to add a placeholder character that helps your program identify where the dynamic markup begins and ends.
 
