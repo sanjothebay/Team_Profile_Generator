@@ -37,6 +37,7 @@ const render = require("./lib/htmlRenderer");
 // array of questions for user
 // const questions =
 // function to call the question prompts
+
 function ManagerQuestions() {
   inquirer
     .prompt([
@@ -62,7 +63,7 @@ function ManagerQuestions() {
         name: "managersOfficeNumber",
       },
       {
-        type: "rawlist",
+        type: "list",
         message: "Which type of team member you like to add?",
         name: "typeOfTeamMember",
         choices: ["Engineer", "Intern", "None"],
@@ -109,7 +110,7 @@ function engineersQuestions() {
         name: "engineersGitHubUserName",
       },
       {
-        type: "rawlist",
+        type: "list",
         message: "Which type of team member you like to add?",
         name: "typeOfTeamMember",
         choices: ["Engineer", "Intern", "None"],
@@ -156,7 +157,7 @@ function InternQuestions() {
         name: "internsSchoolName",
       },
       {
-        type: "rawlist",
+        type: "list",
         message: "Which Type of Team Member would you like to add?",
         name: "typeOfTeamMember",
         choices: ["Engineer", "Intern", "None"],
