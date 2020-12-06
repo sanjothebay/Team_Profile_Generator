@@ -33,10 +33,13 @@ const render = require("./lib/htmlRenderer");
 // for further information. Be sure to test out each class and verify it generates an
 // object with the correct structure and methods. This structure will be crucial in order
 // for the provided `render` function to work! ```
+// create instances for the team member
+// const manager = new Manager ();
+// const engineer = new Engineer ();
+// const intern = new Intern ();
 
 
-
-
+let TeamMembersArray = [];
 // array of questions for user
 // const questions =
 // function to call the question prompts
@@ -78,14 +81,16 @@ function ManagerQuestions() {
     //function to initialize program/unction call to initialize program
     .then((response) => {
       console.log(response);
-      // fs.writeToFile();
+      const manager = new Manager (response.managersName, response.managersId, response.managersEmail, response.managersOfficeNumber,);
+      TeamMembersArray.push(manager);
       if (response.typeOfTeamMember === "Engineer") {
         engineersQuestions();
       } else if (response.typeOfTeamMember === "Intern") {
         InternQuestions();
       } else {
         response.typeOfTeamMember === "None";
-        render();
+        
+        fs.writeFile(outputPath, render(TeamMembersArray), "utf-8");
       }
     });
 }
@@ -127,13 +132,16 @@ function engineersQuestions() {
     .then((response) => {
       console.log(response);
       // fs.writeToFile();
+      const engineer = new Engineer (response.engineersName, response.engineersId, response.engineersEmail, response.engineersGitHubUserName,);
+      TeamMembersArray.push(engineer);
       if (response.typeOfTeamMember === "Engineer") {
         engineersQuestions();
       } else if (response.typeOfTeamMember === "Intern") {
         InternQuestions();
       } else {
         response.typeOfTeamMember === "None";
-        render();
+        render(TeamMembersArray);
+        fs.writeFile(outputPath, render(TeamMembersArray), "utf-8");
       }
     });
 }
@@ -175,13 +183,16 @@ function InternQuestions() {
     .then((response) => {
       console.log(response);
       // fs.writeToFile();
+      const intern = new Intern (response.internsName, response.internsId, response.internsEmail, response.internsSchoolName,);
+      TeamMembersArray.push(intern);
       if (response.typeOfTeamMember === "Engineer") {
         engineersQuestions();
       } else if (response.typeOfTeamMember === "Intern") {
         InternQuestions();
       } else {
         response.typeOfTeamMember === "None";
-        render();
+        render(TeamMembersArray);
+        fs.writeFile(outputPath, render(TeamMembersArray), "utf-8");
       }
     });
 }
