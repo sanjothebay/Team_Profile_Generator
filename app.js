@@ -158,7 +158,7 @@ function InternQuestions() {
         render(TeamMembersArray);
         fs.writeFile(outputPath, render(TeamMembersArray), (err) =>{
           if (err) throw err ;
-         console.log("Wrote to file!") ;
+         console.log("Team Profile was Created for the Team To View!") ;
           })
         }
     });
