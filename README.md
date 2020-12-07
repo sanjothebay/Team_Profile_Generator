@@ -45,7 +45,7 @@ with the company. For instance, an intern may provide their school, whereas an e
 
 * Below is an example of what your application looks like. when the Questions are competed.
 
-
+![image](https://user-images.githubusercontent.com/67298961/101312185-bc08dc80-3818-11eb-8913-bfffc49ed2d2.png)
 
 
 ## Getting Started
@@ -85,26 +85,33 @@ package.json/
 README.md/
 ```
 
-
-
 ### Classes
 `Employee` is the parent class and will extend to the other Classes `Manager`, `Engineer`, `Intern`,
 
+![image](https://user-images.githubusercontent.com/67298961/101312482-78fb3900-3819-11eb-9f14-551232e9ae81.png)
 
 ### Test Results
 
-<iframe src="https://drive.google.com/file/d/1TtRyWVjPHzJ3zMsa-hW77ZSOnnUs4XgM/preview" width="640" height="480"></iframe>
+![4pcl05](https://user-images.githubusercontent.com/67298961/101310391-603c5480-3814-11eb-81cd-eb29e8b1dbdc.gif)
+
+![image](https://user-images.githubusercontent.com/67298961/101312388-405b5f80-3819-11eb-9a49-725ab8a35712.png)
 
 ### User input
 
 The project prompt the user to build an engineering team. 
+
+![4pcm69](https://user-images.githubusercontent.com/67298961/101311095-456adf80-3816-11eb-9e6e-ed477601b27b.gif)
+
+![image](https://user-images.githubusercontent.com/67298961/101312293-038f6880-3819-11eb-9827-078317df873f.png)
 
 
 ### Roster output
 
 The project generates a `team.html` page in the `output` directory, that displays a nicely formatted team roster. For Each team member.
 
+![4pcnir](https://user-images.githubusercontent.com/67298961/101312125-97146980-3818-11eb-9dd7-0f5887c032dd.gif)
 
+![image](https://user-images.githubusercontent.com/67298961/101312185-bc08dc80-3818-11eb-8913-bfffc49ed2d2.png)
 
 
 ## Bonus
@@ -112,8 +119,6 @@ The project generates a `team.html` page in the `output` directory, that display
 * Use validation to ensure that the information provided is in the proper expected format.
 
 * Add the application to your portfolio.
-
-
 
 
 ## Submission Video
