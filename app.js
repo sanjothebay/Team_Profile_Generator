@@ -90,8 +90,12 @@ function ManagerQuestions() {
       } else {
         response.typeOfTeamMember === "None";
         
-        fs.writeFile(outputPath, render(TeamMembersArray), "utf-8");
-      }
+        fs.writeFile(outputPath, render(TeamMembersArray), (err) =>{
+          if (err) throw err ;
+         console.log("Wrote to file!") ;
+          })
+        }
+      
     });
 }
 // Engineer set of questions
@@ -141,8 +145,11 @@ function engineersQuestions() {
       } else {
         response.typeOfTeamMember === "None";
         render(TeamMembersArray);
-        fs.writeFile(outputPath, render(TeamMembersArray), "utf-8");
-      }
+        fs.writeFile(outputPath, render(TeamMembersArray), (err) =>{
+          if (err) throw err ;
+         console.log("Wrote to file!") ;
+          })
+        }
     });
 }
 
@@ -192,8 +199,11 @@ function InternQuestions() {
       } else {
         response.typeOfTeamMember === "None";
         render(TeamMembersArray);
-        fs.writeFile(outputPath, render(TeamMembersArray), "utf-8");
-      }
+        fs.writeFile(outputPath, render(TeamMembersArray), (err) =>{
+          if (err) throw err ;
+         console.log("Wrote to file!") ;
+          })
+        }
     });
 }
 
