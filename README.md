@@ -53,7 +53,7 @@ with the company. For instance, an intern may provide their school, whereas an e
 * Created a `.gitignore` file and include `node_modules/` and `.DS_Store/` so that your `node_modules` so that the directory isn't tracked or uploaded to GitHub. 
 this was done before installing any npm dependencies.
 
-*This is where i Created a the array of questions and exported the packages to use for the application.
+* This is where i Created a the array of questions and exported the packages to use for the application.
 
 * included a `package.json` with the required dependencies. this was create by running `npm init` when the first set up of the project, before installing any dependencies.
 
@@ -125,7 +125,10 @@ The project generates a `team.html` page in the `output` directory, that display
 
 * Link to video demonstrating the entirety of the app's functionality 
 
-[Project explanation](https://drive.google.com/file/d/15Ck_891Sjm57eR1npcfdMT0PHbN0zY_F/view?usp=sharing) 
+Click Here:
+[Project explanation](https://drive.google.com/file/d/15Ck_891Sjm57eR1npcfdMT0PHbN0zY_F/view?usp=sharing)
+
+https://drive.google.com/file/d/15Ck_891Sjm57eR1npcfdMT0PHbN0zY_F/view?usp=sharing
 
 
 
