@@ -1,11 +1,10 @@
 # Team_Profile_Generator
 
+# Unit 10 OOP Homework: Team_Profile_Generator
+
 https://sanjothebay.github.io/Team_Profile_Generator/
 
 https://github.com/sanjothebay/Team_Profile_Generator
-
-
-# Unit 10 OOP Homework: Team_Profile_Generator
 
 
 ## Instructions
@@ -15,7 +14,7 @@ team members. The user can input any number of team members, and they may be a m
 completed building the team, the application will create an HTML file that displays a nicely formatted team roster based on the information provided by the user. Following the 
 [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
 
-#User Concept:
+##User Concept:
 
 ```
 As a manager
@@ -23,7 +22,7 @@ I want to generate a webpage that displays my team's basic info
 so that I have quick access to emails and GitHub profiles
 ```
 
-The application is using:
+##The application is using:
 
 	* Uses the [Inquirer package](https://www.npmjs.com/package/inquirer).
 The Inquirer Packet will need ot be exported you can do this by npm i 
@@ -54,23 +53,15 @@ with the company. For instance, an intern may provide their school, whereas an e
 * Created a `.gitignore` file and include `node_modules/` and `.DS_Store/` so that your `node_modules` so that the directory isn't tracked or uploaded to GitHub. 
 this was done before installing any npm dependencies.
 
+*This is where i Created a the array of questions and exported the packages to use for the application.
+
 * included a `package.json` with the required dependencies. this was create by running `npm init` when the first set up of the project, before installing any dependencies.
 
 * A walkthrough video that demonstrates the functionality of the README generator a link to the video is included.
 
  ---
 
-There are also unit tests to help you build the classes necessary.
-
-It is recommended that you follow this workflow:
-
-1. Run tests
-2. Create or update classes to pass a single test case
-3. Repeat
-
-🎗 Remember, you can run the tests at any time with `npm run test`
-
-It is recommended that you start with a directory structure that looks like this:
+##directory structure:
 
 ```
 lib/           // classes and helper code
