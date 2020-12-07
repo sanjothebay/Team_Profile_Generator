@@ -1,6 +1,6 @@
 # Team_Profile_Generator
 
-# Unit 10 OOP Homework: Team_Profile_Generator
+## Unit 10 OOP Homework: Team_Profile_Generator
 
 https://sanjothebay.github.io/Team_Profile_Generator/
 
@@ -123,8 +123,9 @@ The project generates a `team.html` page in the `output` directory, that display
 
 ## Submission Video
 
-* A video demonstrating the entirety of the app's functionality 
+* Link to video demonstrating the entirety of the app's functionality 
 
+[Project explanation](https://drive.google.com/file/d/15Ck_891Sjm57eR1npcfdMT0PHbN0zY_F/view?usp=sharing) 
 
 
 
