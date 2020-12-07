@@ -116,9 +116,11 @@ The project generates a `team.html` page in the `output` directory, that display
 
 ## Bonus
 
-* Use validation to ensure that the information provided is in the proper expected format.
+* validated to ensure that the information provided is in the proper expected format.
 
-* Add the application to your portfolio.
+![image](https://user-images.githubusercontent.com/67298961/101314204-9e8a4180-381d-11eb-8ecb-5c71b0dc9a10.png)
+
+* Added the application to my portfolio.
 
 
 ## Submission Video
