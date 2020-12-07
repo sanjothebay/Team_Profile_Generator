@@ -57,7 +57,7 @@ this was done before installing any npm dependencies.
 
 * included a `package.json` with the required dependencies. this was create by running `npm init` when the first set up of the project, before installing any dependencies.
 
-* A walkthrough video that demonstrates the functionality of the README generator a link to the video is included.
+* A walkthrough video that demonstrates the functionality of the test `app.js` and the Creation of the `team.html` a link to the video is included.
 
  ---
 
@@ -89,6 +89,11 @@ README.md/
 
 ### Classes
 `Employee` is the parent class and will extend to the other Classes `Manager`, `Engineer`, `Intern`,
+
+
+### Test Results
+
+<iframe src="https://drive.google.com/file/d/1TtRyWVjPHzJ3zMsa-hW77ZSOnnUs4XgM/preview" width="640" height="480"></iframe>
 
 ### User input
 
