@@ -71,6 +71,7 @@ this was done before installing any npm dependencies.
 lib/           // classes and helper code
 node_modeule   // Node Modeule
 output/        // rendered output This File was Created as in README.md
+  style.css    // use for styling the render output.
   team.htm     // Renders Teams information output
 templates/     // HTML template(s)
   Employee.html
