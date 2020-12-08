@@ -10,10 +10,10 @@ https://github.com/sanjothebay/Team_Profile_Generator
 # Table of contents
 
 1. [Instruction](#Instruction)
-2. [Getting Started](#Getting Started)
+2. [Getting Started](#Getting_Started)
 3. [Classes](#Classes)
-4. [Roster output](#Roster output)
-5. [Submission Video](#Submission Video)
+4. [Roster output](#Roster_output)
+5. [Submission Video](#Submission_Video)
 
 
 ## Instruction <a name="Instruction"></a>
@@ -61,7 +61,7 @@ with the company. For instance, an intern may provide their school, whereas an e
 ![image](https://user-images.githubusercontent.com/67298961/101424336-90413180-38c0-11eb-8b3d-2c23c5dd104e.png)
 
 
-## Getting Started <a name="Getting Started"></a>
+## Getting Started <a name="Getting_Started"></a>
 
 * Created a `.gitignore` file and include `node_modules/` and `.DS_Store/` so that your `node_modules` so that the directory isn't tracked or uploaded to GitHub. 
 this was done before installing any npm dependencies.
@@ -119,7 +119,7 @@ The project prompt the user to build an engineering team.
 ![image](https://user-images.githubusercontent.com/67298961/101312293-038f6880-3819-11eb-9827-078317df873f.png)
 
 
-### Roster output <a name="Roster output"></a>
+### Roster output <a name="Roster_output"></a>
 
 The project generates a `team.html` page in the `output` directory, that displays a nicely formatted team roster. For Each team member.
 
@@ -139,7 +139,7 @@ The project generates a `team.html` page in the `output` directory, that display
 ![image](https://user-images.githubusercontent.com/67298961/101315054-77cd0a80-381f-11eb-839c-0fa50cb59f56.png)
 
 
-## Submission Video <a name="Submission Video"></a>
+## Submission Video <a name="Submission_Video"></a>
 
 * Link to video demonstrating the entirety of the app's functionality 
 
