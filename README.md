@@ -7,7 +7,16 @@ https://sanjothebay.github.io/Team_Profile_Generator/
 https://github.com/sanjothebay/Team_Profile_Generator
 
 
-## Instructions
+# Table of contents
+
+1. [Instruction](#Instruction)
+2. [Getting Started](#Getting Started)
+3. [Classes](#Classes)
+4. [Roster output](#Roster output)
+5. [Submission Video](#Submission Video)
+
+
+## Instruction <a name="Instruction"></a>
 
 Build a software engineering team generator command line application. The application will prompt the user for information about the team manager and then information about the 
 team members. The user can input any number of team members, and they may be a mix of engineers and interns. This assignment must also pass all unit tests. When the user has 
@@ -52,7 +61,7 @@ with the company. For instance, an intern may provide their school, whereas an e
 ![image](https://user-images.githubusercontent.com/67298961/101424336-90413180-38c0-11eb-8b3d-2c23c5dd104e.png)
 
 
-## Getting Started
+## Getting Started <a name="Getting Started"></a>
 
 * Created a `.gitignore` file and include `node_modules/` and `.DS_Store/` so that your `node_modules` so that the directory isn't tracked or uploaded to GitHub. 
 this was done before installing any npm dependencies.
@@ -90,7 +99,7 @@ package.json/
 README.md/
 ```
 
-### Classes
+### Classes <a name="Classes"></a>
 `Employee` is the parent class and will extend to the other Classes `Manager`, `Engineer`, `Intern`,
 
 ![image](https://user-images.githubusercontent.com/67298961/101312482-78fb3900-3819-11eb-9f14-551232e9ae81.png)
@@ -110,7 +119,7 @@ The project prompt the user to build an engineering team.
 ![image](https://user-images.githubusercontent.com/67298961/101312293-038f6880-3819-11eb-9827-078317df873f.png)
 
 
-### Roster output
+### Roster output <a name="Roster output"></a>
 
 The project generates a `team.html` page in the `output` directory, that displays a nicely formatted team roster. For Each team member.
 
@@ -130,7 +139,7 @@ The project generates a `team.html` page in the `output` directory, that display
 ![image](https://user-images.githubusercontent.com/67298961/101315054-77cd0a80-381f-11eb-839c-0fa50cb59f56.png)
 
 
-## Submission Video
+## Submission Video <a name="Submission Video"></a>
 
 * Link to video demonstrating the entirety of the app's functionality 
 
