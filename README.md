@@ -47,6 +47,10 @@ with the company. For instance, an intern may provide their school, whereas an e
 
 ![image](https://user-images.githubusercontent.com/67298961/101312185-bc08dc80-3818-11eb-8913-bfffc49ed2d2.png)
 
+* Below is an example of what My application looks like once the css is add. when the Questions are competed.
+
+![image](https://user-images.githubusercontent.com/67298961/101424336-90413180-38c0-11eb-8b3d-2c23c5dd104e.png)
+
 
 ## Getting Started
 
