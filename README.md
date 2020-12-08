@@ -115,7 +115,7 @@ The project generates a `team.html` page in the `output` directory, that display
 
 ![4pcnir](https://user-images.githubusercontent.com/67298961/101312125-97146980-3818-11eb-9dd7-0f5887c032dd.gif)
 
-![image](https://user-images.githubusercontent.com/67298961/101312185-bc08dc80-3818-11eb-8913-bfffc49ed2d2.png)
+![image](https://user-images.githubusercontent.com/67298961/101424336-90413180-38c0-11eb-8b3d-2c23c5dd104e.png)
 
 
 ## Bonus
