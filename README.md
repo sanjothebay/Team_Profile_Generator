@@ -39,7 +39,7 @@ with the company. For instance, an intern may provide their school, whereas an e
 * The App Creates a command-line application that dynamically generates a professional `team.html` file from a user's input using the 
 [Inquirer package](https://www.npmjs.com/package/inquirer).
 
-*The dependencies are, [jest](https://jestjs.io/) for running the provided tests, and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user.
+* The dependencies are, [jest](https://jestjs.io/) for running the provided tests, and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user.
 
 * The App is runing Node CLI to gather information about each employee.
 
