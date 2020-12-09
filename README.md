@@ -16,9 +16,12 @@ https://github.com/sanjothebay/Team_Profile_Generator
 
 ## Instruction <a name="Instruction"></a>
 
-Build a software engineering team generator command line application. The application will prompt the user for information about the team manager and then information about the 
-team members. The user can input any number of team members, and they may be a mix of engineers and interns. This assignment must also pass all unit tests. When the user has 
-completed building the team, the application will create an HTML file that displays a nicely formatted team roster based on the information provided by the user. Following the 
+Build a software engineering team generator command line application. The application will prompt the user for information about the team manager and then 
+information about the 
+team members. The user can input any number of team members, and they may be a mix of engineers and interns. This assignment must also pass all unit tests. When 
+the user has 
+completed building the team, the application will create an HTML file that displays a nicely formatted team roster based on the information provided by the user. 
+Following the 
 [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
 
 ##User Concept:
@@ -40,13 +43,15 @@ The application will be invoked by using the following command:
 node app.js  To run the App
 npm run test To run t he tests 
 ```
-* The App is Using the [Inquirer npm package](https://github.com/SBoudrias/Inquirer.js/) to prompt the user for their email, id, and specific information based on their role   
+* The App is Using the [Inquirer npm package](https://github.com/SBoudrias/Inquirer.js/) to prompt the user for their email, id, and specific information based 
+on their role   
 with the company. For instance, an intern may provide their school, whereas an engineer may provide their GitHub username.
 
 * The App Creates a command-line application that dynamically generates a professional `team.html` file from a user's input using the 
 [Inquirer package](https://www.npmjs.com/package/inquirer).
 
-* The dependencies are, [jest](https://jestjs.io/) for running the provided tests, and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input from the user.
+* The dependencies are, [jest](https://jestjs.io/) for running the provided tests, and [inquirer](https://www.npmjs.com/package/inquirer) for collecting input 
+from the user.
 
 * The App is runing Node CLI to gather information about each employee.
 
@@ -66,7 +71,8 @@ this was done before installing any npm dependencies.
 
 * This is where i Created a the array of questions and exported the packages to use for the application.
 
-* included a `package.json` with the required dependencies. this was create by running `npm init` when the first set up of the project, before installing any dependencies.
+* included a `package.json` with the required dependencies. this was create by running `npm init` when the first set up of the project, before installing any 
+dependencies.
 
 * A walkthrough video that demonstrates the functionality of the test `app.js` and the Creation of the `team.html` a link to the video is included.
 
