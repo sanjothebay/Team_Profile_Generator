@@ -44,8 +44,7 @@ node app.js  To run the App
 npm run test To run t he tests 
 ```
 * The App is Using the [Inquirer npm package](https://github.com/SBoudrias/Inquirer.js/) to prompt the user for their email, id, and specific information based 
-on their role   
-with the company. For instance, an intern may provide their school, whereas an engineer may provide their GitHub username.
+on their role with the company.
 
 * The App Creates a command-line application that dynamically generates a professional `team.html` file from a user's input using the 
 [Inquirer package](https://www.npmjs.com/package/inquirer).
