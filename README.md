@@ -50,11 +50,11 @@ with the company. For instance, an intern may provide their school, whereas an e
 
 * The App is runing Node CLI to gather information about each employee.
 
-* Below is an example of what your application looks like. when the Questions are competed.
+* Below is an example of what your application should looks like. when the Questions are competed.
 
 ![image](https://user-images.githubusercontent.com/67298961/101312185-bc08dc80-3818-11eb-8913-bfffc49ed2d2.png)
 
-* Below is an example of what My application looks like once the css is add. when the Questions are competed.
+* Below is what My application looks like once the css is added and the Questions are competed.
 
 ![image](https://user-images.githubusercontent.com/67298961/101424336-90413180-38c0-11eb-8b3d-2c23c5dd104e.png)
 
@@ -142,6 +142,6 @@ The project generates a `team.html` page in the `output` directory, that display
 * Link to video demonstrating the entirety of the app's functionality 
 
 Click Here:
-[Project explanation](https://drive.google.com/file/d/15Ck_891Sjm57eR1npcfdMT0PHbN0zY_F/view?usp=sharing)
+[Project explanation](https://drive.google.com/file/d/1IYe13hOnHLd3jK5EmJ5MAEj5iVt5T8db/view?usp=sharing)
 
-https://drive.google.com/file/d/15Ck_891Sjm57eR1npcfdMT0PHbN0zY_F/view?usp=sharing
+https://drive.google.com/file/d/1IYe13hOnHLd3jK5EmJ5MAEj5iVt5T8db/view?usp=sharing
