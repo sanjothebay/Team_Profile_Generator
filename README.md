@@ -139,7 +139,7 @@ The project generates a `team.html` page in the `output` directory, that display
 
 * Added the application to my portfolio.
 
-![image](https://user-images.githubusercontent.com/67298961/101315054-77cd0a80-381f-11eb-839c-0fa50cb59f56.png)
+![image](https://user-images.githubusercontent.com/67298961/101586905-84c93580-39a8-11eb-96dc-072c54837c7a.png)
 
 
 ## Submission Video <a name="Submission_Video"></a>
