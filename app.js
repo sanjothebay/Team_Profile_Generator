@@ -15,7 +15,6 @@ let TeamMembersArray = [];
 function ManagerQuestions() {
   inquirer
     .prompt([
-      // manager`s set of questions
       {
         type: "input",
         message: "What is your Manager`s Name?",
@@ -96,7 +95,6 @@ function engineersQuestions() {
     ])
     .then((response) => {
       console.log(response);
-      // fs.writeToFile();
       const engineer = new Engineer (response.engineersName, response.engineersId, response.engineersEmail, response.engineersGitHubUserName,);
       TeamMembersArray.push(engineer);
       if (response.typeOfTeamMember === "Engineer") {
@@ -146,7 +144,6 @@ function InternQuestions() {
     ])
     .then((response) => {
       console.log(response);
-      // fs.writeToFile();
       const intern = new Intern (response.internsName, response.internsId, response.internsEmail, response.internsSchoolName,);
       TeamMembersArray.push(intern);
       if (response.typeOfTeamMember === "Engineer") {
